@@ -1,0 +1,180 @@
+<!-- FILE: index.html -->
+<!doctype html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Galeria</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="galeria.css">
+</head>
+
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Visualizador de imagem">
+  <button class="lb-close" id="lbClose" aria-label="Fechar">&times;</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Anterior">&#10094;</button>
+
+  <figure class="lb-viewport">
+    <img id="lbImg" alt="" />
+    <figcaption id="lbCaption"></figcaption>
+  </figure>
+
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Próxima">&#10095;</button>
+</div>
+
+<script src="galeria.js" defer></script>
+
+<body>
+    <header class="topbar">
+        <div class="container navwrap">
+            <div class="logo">FIORETTO</div>
+
+            <nav class="mainnav" id="mainnav">
+                <a href="index.html">HOME</a>
+                <a href="sobre.html">SOBRE NÓS</a>
+
+
+                <!-- DROPDOWN MENU -->
+                <div class="dropdown">
+                    <button class="dropbtn">MENU ▾</button>
+                    <div class="dropdown-content">
+                        <a href="starters.html" target="_blank">Entradas</a>
+                        <a href="maincourses.html" target="_blank">Pratos Principais</a>
+                        <a href="desserts.html" target="_blank">Sobremesas</a>
+                        <a href="drinks.html" target="_blank">Bebidas</a>
+                    </div>
+                </div>
+
+                <a href="galeria.html"  class="active">GALERIA</a>
+                <a href="reservas.html">RESERVAS</a>
+                <a href="contactos.html">CONTACTOS</a>
+            </nav>
+
+
+    <!-- BOTÃO BURGER PARA MOBILE -->
+
+        <div class="burger" id="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</header>
+
+<script>
+  const burger = document.getElementById('burger');
+  const nav = document.getElementById('mainnav');
+
+  burger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+  });
+</script>
+
+    <main>
+        <section class="section-intro">
+            <div class="container">
+                <h1 class="page-title">Galeria</h1>
+                <p class="page-lead">Aqui cada fotografia reflete o cuidado na apresentação dos pratos, a elegância do espaço e a dedicação em proporcionar experiências gastronómicas memoráveis.</p>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="gallery-row">
+                <figure class="card"><img
+                        src="Imagens/caprese.jpg"
+                        alt="1"></figure>
+                <figure class="card"><img
+                        src="Imagens/carne.jpg"
+                        alt="2"></figure>
+                <figure class="card"><img
+                        src="Imagens/bruschettaaa.jpg"
+                        alt="3"></figure>
+                <figure class="card"><img
+                        src="Imagens/panza.png"
+                        alt="4"></figure>
+            </div>
+            <div class="gallery-row">
+                <figure class="card"><img
+                        src="Imagens/pizzas.jpg"
+                        alt="5"></figure>
+                <figure class="card"><img
+                        src="Imagens/starters2.jpg"
+                        alt="6"></figure>
+                <figure class="card"><img
+                        src="Imagens/capricciosa-pizza-1.jpg"
+                        alt="7"></figure>
+                <figure class="card"><img
+                        src="Imagens/salada.png"
+                        alt="8"></figure>
+            </div>
+            <div class="gallery-row">
+                <figure class="card"><img
+                        src="Imagens/pasta.png"
+                        alt="9"></figure>
+                <figure class="card"><img
+                        src="Imagens/foccacia.png"
+                        alt="10"></figure>
+                <figure class="card"><img
+                        src="Imagens/pictures-of-pizza-23-1.jpg"
+                        alt="11"></figure>
+                <figure class="card"><img
+                        src="Imagens/Starters.webp"
+                        alt="12"></figure>
+            </div>
+            <div class="gallery-row">
+                <figure class="card"><img
+                        src="Imagens/gamberetti.png"
+                        alt="13"></figure>
+                <figure class="card"><img
+                        src="Imagens/thumb-1920-752159.jpg"
+                        alt="14"></figure>
+                <figure class="card"><img
+                        src="Imagens/thumb-1920-1052976.jpg"
+                        alt="15"></figure>
+                <figure class="card"><img
+                        src="Imagens/las.jpg"
+                        alt="16"></figure>
+            </div>
+            <div class="gallery-row">
+                <figure class="card"><img
+                        src="Imagens/aperolmenu.jpg"
+                        alt="17"></figure>
+                <figure class="card"><img
+                        src="Imagens/straci.jpg"
+                        alt="18"></figure>
+                <figure class="card"><img
+                        src="Imagens/tiramissu.png"
+                        alt="19"></figure>
+                <figure class="card"><img
+                        src="Imagens/affogato.png"
+                        alt="20"></figure>
+            </div>
+            <div class="gallery-row">
+                <figure class="card"><img
+                        src="Imagens/Entrada.png"
+                        alt="21"></figure>
+                <figure class="card"><img
+                        src="Imagens/ChatGPT Image 28_10_2025, 09_53_45.png"
+                        alt="22"></figure>
+                <figure class="card"><img
+                        src="Imagens/ChatGPT Image 29_10_2025, 11_39_09.png"
+                        alt="23"></figure>
+                <figure class="card"><img
+                        src="Imagens/ChatGPT Image 28_10_2025, 09_53_36.png"
+                        alt="24"></figure>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container">&copy; 2025 Fioretto</div>
+    </footer>
+
+
+</body>
+
+</html>

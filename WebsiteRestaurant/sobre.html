@@ -1,0 +1,162 @@
+<!-- FILE: index.html -->
+<!doctype html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sobre Nós</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="sobre.css">
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container navwrap">
+            <div class="logo">FIORETTO</div>
+
+            <nav class="mainnav" id="mainnav">
+                <a href="index.html">HOME</a>
+                <a href="sobre.html"class="active">SOBRE NÓS</a>
+
+
+                <!-- DROPDOWN MENU -->
+                <div class="dropdown">
+                    <button class="dropbtn">MENU ▾</button>
+                      <div class="dropdown-content">
+                        <a href="starters.html">Entradas</a>
+                        <a href="maincourses.html">Pratos Principais</a>
+                        <a href="desserts.html" >Sobremesas</a>
+                       <a href="drinks.html">Bebidas</a>
+                    </div>
+                </div>
+
+                <a href="galeria.html">GALERIA</a>
+                <a href="reservas.html">RESERVAS</a>
+                <a href="contactos.html">CONTACTOS</a>
+            </nav>
+
+
+           <!-- BOTÃO BURGER PARA MOBILE -->
+
+        <div class="burger" id="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</header>
+
+<script>
+  const burger = document.getElementById('burger');
+  const nav = document.getElementById('mainnav');
+
+  burger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+  });
+</script>
+    <main>
+        <section class="hero">
+            <img src="Imagens/ChatGPT Image 28_10_2025, 09_53_45.png" alt="Flour, tomatoes, and olive oil">
+        </section>
+
+        <section class="about container">
+            <h2>Desde 1982</h2>
+            <p>No coração do Porto, Fioretto nasceu da amizade e visão partilhada de Diogo, Sara e Catarina. Unidos pela
+                paixão pela gastronomia italiana e pela hospitalidade mediterrânica, decidiram criar um espaço único,
+                onde tradição e arte se entrelaçam para oferecer aos clientes uma experiência memorável.</p>
+            <p>Inspirado em pinturas luminosas, como as que retratam paisagens soalheiras e cestos de limões, o espaço
+                foi concebido como uma verdadeira galeria viva. </p>
+            <p>O limão, símbolo de frescura e autenticidade, tornou-se a marca identitária do restaurante, refletindo-se
+                na decoração, na carta e na atmosfera vibrante que ainda hoje acolhe gerações de clientes fiéis.</p>
+        </section>
+
+        <section class="hero2">
+            <img src="Imagens/ChatGPT Image 28_10_2025, 09_53_45.png" alt="Flour, tomatoes, and olive oil">
+        </section>
+
+        <section class="team container">
+            <h2 class="team-title">A Nossa Equipa</h2>
+
+            <p class="team-intro">
+                A nossa equipa de chefs é guiada pela paixão pela cozinha italiana e pelo respeito pela tradição.
+            </p>
+            <p class="team-intro">
+                Na Fioretto Cada prato é pensado com criatividade e dedicação, transformando ingredientes simples em
+                verdadeiras experiências gastronómicas.
+            </p>
+
+            <article class="member">
+                <div class="member-photo">
+                    <img src="Imagens/Chefe_Sara.jpg"
+                        alt="Chef Umberto Vincenzo">
+                </div>
+                <div class="member-body">
+                    <h3 class="member-name">Sara Carvalho</h3>
+                    <div class="member-role">Chef</div>
+                    <p class="member-text">
+                        Nascida no Porto em 1958, Sara Carvalho cedo revelou a sua paixão pela gastronomia italiana.
+                        Durante a sua temporada em Nápoles, aprendeu os segredos das massas artesanais e do uso do limão
+                        como ingrediente central.
+                        Ao regressar a Portugal, trouxe consigo não apenas técnicas refinadas, mas também uma filosofia:
+                        cozinhar deve ser uma celebração da vida, simples e vibrante.
+                        Desde 1982, lidera a cozinha do restaurante com mestria, unindo tradição e inovação em cada
+                        prato, e formando gerações de jovens cozinheiros que hoje seguem o seu exemplo.
+                    </p>
+                </div>
+            </article>
+
+            <article class="member">
+                <div class="member-photo">
+                    <img src="Imagens/Chefe_Rato.jpg"
+                        alt="Gerald Mackler">
+                </div>
+                <div class="member-body">
+                    <h3 class="member-name">Catarina Rato</h3>
+                    <div class="member-role">Chef assistente</div>
+                    <p class="member-text">
+                        Natural de Lisboa, Catarina Rato descobriu a sua vocação culinária ao lado da avó, que lhe
+                        ensinou a importância da paciência e do detalhe em cada receita.
+                        A sua paixão levou-o a estudar em escolas de cozinha em Itália, onde aperfeiçoou a arte de
+                        harmonizar sabores mediterrânicos.
+                        Desde a fundação do restaurante, em 1982, acompanha a Chef Sara Carvalho como seu braço direito,
+                        garantindo consistência e excelência em cada prato. É reconhecido pelo seu rigor técnico e pela
+                        criatividade subtil que acrescenta às receitas clássicas.
+                    </p>
+                </div>
+            </article>
+
+            <article class="member">
+                <div class="member-photo">
+                    <img src="Imagens/Chefe_Diogo.jpg"
+                        alt="Mary Walnut">
+                </div>
+                <div class="member-body">
+                    <h3 class="member-name">Diogo Pestana</h3>
+                    <div class="member-role">Chef de Sobremesas</div>
+                    <p class="member-text">
+                        Madeirense de origem, Diogo Pestana trouxe para o Porto a frescura dos sabores tropicais e a sua
+                        paixão pela doçaria italiana. 
+                        Fascinado desde cedo pela confeção de sobremesas, estudou em Milão, onde aprendeu a delicada arte do tiramisù e da pastelaria fina. Desde 1982, é o
+                        responsável por encerrar cada refeição com um toque inesquecível, transformando limões, frutas
+                        frescas e ingredientes tradicionais em criações elegantes e memoráveis. 
+                        A sua assinatura está
+                        presente em cada doce, onde técnica, criatividade e emoção se encontram.
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container">&copy; 2025 Fioretto</div>
+    </footer>
+
+
+</body>
+
+</html>
