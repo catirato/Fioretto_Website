@@ -2,14 +2,23 @@ name: Deploy Website
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check files
+        run: ls -la ./Fioretto_Website/WebsiteRestaurant
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
