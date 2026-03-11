@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fioretto</title>
+    <link href="style2.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Birthstone&family=Jura:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header class="topbar">
+      <div class="container navwrap">
+        <div class="logo">FIORETTO</div>
+
+        <nav class="mainnav" id="mainnav">
+          <a href="index.html">HOME</a>
+          <a href="sobre.html">SOBRE NÓS</a>
+
+          <div class="dropdown">
+            <button class="dropbtn" class="active">MENU ▾</button>
+            <div class="dropdown-content">
+              <a href="starters.html">Entradas</a>
+              <a href="maincourses.html">Pratos Principais</a>
+              <a href="desserts.html">Sobremesas</a>
+              <a href="drinks.html">Bebidas</a>
+            </div>
+          </div>
+
+          <a href="galeria.html">GALERIA</a>
+          <a href="reservas.html">RESERVAS</a>
+          <a href="contactos.html">CONTACTOS</a>
+        </nav>
+
+        <div class="burger" id="burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      const burger = document.getElementById("burger");
+      const nav = document.getElementById("mainnav");
+      burger.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+
+    <!-- HERO -->
+    <section class="hero3">
+      <div class="overlay">
+        <h1>PRATOS PRINCIPAIS</h1>
+      </div>
+    </section>
+
+<!-- NOVA SECÇÃO GRID 2x2 -->
+<section class="menu-grid-section">
+  <div class="container text-center">
+    <h2 class="menu-section-title"></h2>
+    <p class="menu-intro"></p>
+
+    <div class="menu-grid">
+      <!-- BLOCO 1 -->
+      <div class="menu-item">
+        <img src="Imagens/pasta.png" alt="Massas" />
+        <div class="menu-overlay double">
+          <div class="dish">
+            <h3>Spaghetti Carbonara <span>€10</span></h3>
+            <p>Espaguete al dente com molho cremoso de ovos, queijo e pancetta crocante.</p>
+          </div>
+          <div class="divider"></div>
+          <div class="dish">
+            <h3>Tagliatelle al Pesto <span>€11</span></h3>
+            <p>Tagliatelle fresco com molho pesto de manjericão e pinhões.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BLOCO 2 -->
+      <div class="menu-item">
+        <img src="Imagens/risotto.jpg" alt="Risottos" />
+        <div class="menu-overlay double">
+          <div class="dish">
+            <h3>Risotto ai Funghi <span>€12</span></h3>
+            <p>Arroz cremoso com cogumelos frescos, vinho branco e parmesão.</p>
+          </div>
+          <div class="divider"></div>
+          <div class="dish">
+            <h3>Risotto al Limone <span>€13</span></h3>
+            <p>Risotto leve com raspas de limão, manteiga e parmesão.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BLOCO 3 -->
+      <div class="menu-item">
+        <img src="Imagens/lasagna.jpg" alt="Lasagna" />
+        <div class="menu-overlay double">
+          <div class="dish">
+            <h3>Lasagna alla Bolognese <span>€13</span></h3>
+            <p>Camadas de massa fresca com molho bolonhesa e béchamel gratinado.</p>
+          </div>
+          <div class="divider"></div>
+          <div class="dish">
+            <h3>Lasagna Vegetariana <span>€12</span></h3>
+            <p>Recheio de espinafres, ricotta e molho de tomate caseiro.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BLOCO 4 -->
+      <div class="menu-item">
+        <img src="Imagens/pizzas.jpg" alt="Pizzas" />
+        <div class="menu-overlay double">
+          <div class="dish">
+            <h3>Pizza Quattro Formaggi <span>€12</span></h3>
+            <p>Pizza com mistura cremosa de mozzarella, gorgonzola, parmigiano e fontina.</p>
+          </div>
+          <div class="divider"></div>
+          <div class="dish">
+            <h3>Pizza Margherita <span>€10</span></h3>
+            <p>Molho de tomate fresco, mozzarella e folhas de manjericão.</p>
+          </div>
+
+          <button
+            type="button"
+            class="btn btn-outline-light mt-3"
+            data-bs-toggle="modal"
+            data-bs-target="#pizzaMenuModal"
+          >
+            Ver Cardápio Completo 🍕
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">&copy; 2025 Fioretto</div>
+    </footer>
+
+    <!-- MODAL: Cardápio Completo de Pizzas -->
+    <div class="modal fade" id="pizzaMenuModal" tabindex="-1" aria-labelledby="pizzaMenuLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="background-color: #ffffff; color: rgb(83, 117, 136);">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pizzaMenuLabel">Cardápio Completo de Pizzas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="menu-item mb-3">
+              <div class="d-flex justify-content-between"><strong>Margherita</strong><span>€16</span></div>
+              <p>Massa fina com molho de tomate fresco, mozzarella de búfala e manjericão.</p>
+            </div>
+
+            <div class="menu-item mb-3">
+              <div class="d-flex justify-content-between"><strong>Quattro Formaggi</strong><span>€20</span></div>
+              <p>Mistura cremosa de mozzarella, gorgonzola, parmigiano e fontina.</p>
+            </div>
+
+            <div class="menu-item mb-3">
+              <div class="d-flex justify-content-between"><strong>Marinara</strong><span>€23</span></div>
+              <p>Molho de tomate, alho, orégãos e azeite extra virgem.</p>
+            </div>
+
+            <div class="menu-item mb-3">
+              <div class="d-flex justify-content-between"><strong>Capricciosa</strong><span>€18</span></div>
+              <p>Molho de tomate, mozzarella, presunto, cogumelos e azeitonas.</p>
+            </div>
+
+            <div class="menu-item mb-3">
+              <div class="d-flex justify-content-between"><strong>Americana</strong><span>€35</span></div>
+              <p>Molho de tomate, mozzarella e pepperoni crocante.</p>
+            </div>
+
+            <div class="menu-item mb-3">
+              <div class="d-flex justify-content-between"><strong>Crudo de Parma</strong><span>€24</span></div>
+              <p>Molho de tomate, mozzarella, presunto de Parma, rúcula e parmesão.</p>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  </body>
+</html>

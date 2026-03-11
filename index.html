@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fioretto</title>
+    <link href="index.css" rel="stylesheet"/> 
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Jura:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+   <!-- NAVBAR -->
+<header class="topbar">
+  <div class="container navwrap">
+    <div class="logo">FIORETTO</div>
+ 
+  <nav class="mainnav" id="mainnav">
+  <a href="index.html" class="active">HOME</a>
+  <a href="sobre.html">SOBRE NÓS</a>
+ 
+     
+  <!-- DROPDOWN MENU -->
+  <div class="dropdown">
+    <button class="dropbtn">MENU ▾</button>
+        <div class="dropdown-content">
+                        <a href="starters.html">Entradas</a>
+                        <a href="maincourses.html">Pratos Principais</a>
+                        <a href="desserts.html" >Sobremesas</a>
+                       <a href="drinks.html">Bebidas</a>
+                    </div>
+                </div>
+ 
+  <a href="galeria.html">GALERIA</a>
+  <a href="reservas.html">RESERVAS</a>
+  <a href="contactos.html">CONTACTOS</a>
+</nav>
+ 
+
+   <!-- BOTÃO BURGER PARA MOBILE -->
+
+        <div class="burger" id="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</header>
+
+<script>
+  const burger = document.getElementById('burger');
+  const nav = document.getElementById('mainnav');
+
+  burger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+  });
+</script>
+
+<!-- CABEÇALHO -->
+<section class="hero">
+    <div class="overlay">
+      <h1>Pizza que te enche a alma</h1>
+      <a href="reservas.html"><button class="cta">Faça uma reserva</button></a>
+    </div>
+</section>
+
+<!-- SECÇÃO PROMO -->
+<section class="promo-section">
+    <div class="promo-left">
+        <div class="promo-images">
+            <div class="promo-box">
+                <img src="Imagens/imagemPizza.jpg" alt="Special Pizza">
+                <div class="promo-banner orange">
+                    <p>Pizza Especial</p>
+                    <h3>APENAS 13.99€</h3>
+                </div>
+            </div>
+            <div class="promo-box">
+                <img src="Imagens/imagemPizza2.jpg" alt="Monday Offer">
+                <div class="promo-banner gray">
+                    <p>Todas a Segundas Feiras</p>
+                    <h3>Desconto de 15%</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="promo-right">
+        <h3>Chefs do Fioretto</h3>
+        <p class="intro">Naturais da Madeira, Lisboa e Porto, os nossos pizzaiolos são os melhores de Portugal!</p>
+        <blockquote>
+        "A nossa paixão é trazer a autêntica pizza italiana para a sua mesa, usando apenas os ingredientes mais frescos e de alta qualidade."
+    </blockquote>
+        <a href="sobre.html" class="about-link">Sobre Nós</a>
+    </div>
+</section>
+
+
+<!-- CATEGORIAS DE COMIDA -->
+<section class="food-categories">
+    <div class="category drinks">
+      <a href="drinks.html">
+      <img src="Imagens/aperolmenu.jpg" alt="Bebidas" />
+      </a>
+      <h4>BEBIDAS</h4>
+    </div>
+    </div>
+    <div class="category starters">
+      <a href="starters.html">
+      <img src="Imagens/Starters.webp" alt="Entradas" />
+      </a>
+      <h4>ENTRADAS</h4>
+    </div>
+    <div class="category main">
+      <a href="maincourses.html">
+      <img src="Imagens/order_online.jpg" alt="Pratos Principais" />
+      </a>
+      <h4>PRATOS PRINCIPAIS</h4>
+      </div>
+    <div class="category sobremesas">
+      <a href="desserts.html">
+      <img src="Imagens/tiramissu.png" alt="Sobremesas" />
+      </a>
+      <h4>SOBREMESAS</h4>
+    </div>
+    </section>
+
+<!-- O CHEFE RECOMENDA -->
+<section class="chef-recommends">
+  <h2 class="recomendacoes">O Chefe Recomenda</h2>
+  <div class="recommend-grid">
+    <div class="dish">
+      <img src="Imagens/capricciosa-pizza-1.jpg" alt="Capricciosa" />
+      <span class="tag">ESPECIAL DO CHEFE</span>
+      <h4>CAPRICCIOSA</h4>
+      <div class="price">18€</div>
+    </div>
+    <div class="dish">
+      <img src="Imagens/marinara.jpg" alt="Marinara" />
+      <span class="tag">ESPECIAL DO CHEFE</span>
+      <h4>MARINARA</h4>
+      <div class="price">23€</div>
+    </div>
+    <div class="dish">
+      <img src="Imagens/crudo_parma.jpg" alt="Crudo de Parma" />
+      <span class="tag">ESPECIAL DO CHEFE</span>
+      <h4>CRUDO DE PARMA</h4>
+      <div class="price">24€</div>
+    </div>
+    <div class="dish">
+      <img src="Imagens/americano.jpg" alt="Americana" />
+      <span class="tag">ESPECIAL DO CHEFE</span>
+      <h4>AMERICANA</h4>
+      <div class="price">35€</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+        <div class="container">&copy; 2025 Fioretto</div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

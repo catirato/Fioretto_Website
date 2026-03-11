@@ -1,0 +1,97 @@
+<!-- FILE: index.html -->
+<!doctype html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contactos</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="contactos.css">
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container navwrap">
+            <div class="logo">FIORETTO</div>
+
+            <nav class="mainnav" id="mainnav">
+                <a href="index.html">HOME</a>
+                <a href="sobre.html">SOBRE NÓS</a>
+
+
+                <!-- DROPDOWN MENU -->
+                <div class="dropdown">
+                    <button class="dropbtn">MENU ▾</button>
+                    <div class="dropdown-content">
+                        <a href="starters.html">Entradas</a>
+                        <a href="maincourses.html">Pratos Principais</a>
+                        <a href="desserts.html" >Sobremesas</a>
+                        <a href="drinks.html">Bebidas</a>
+                    </div>
+                </div>
+
+                <a href="galeria.html">GALERIA</a>
+                <a href="reservas.html">RESERVAS</a>
+                <a href="contactos.html" class="active">CONTACTOS</a>
+            </nav>
+
+  <!-- BOTÃO BURGER PARA MOBILE -->
+
+        <div class="burger" id="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</header>
+
+<script>
+  const burger = document.getElementById('burger');
+  const nav = document.getElementById('mainnav');
+
+  burger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+  });
+</script>
+
+    <main>
+        <section class="contact-hero">
+            <div class="container columns">
+                <div class="col contact">
+                    <h1>Fala Connosco</h1>
+                    <p class="address">Rua Ciríaco Cardoso, 186 <br>4150-212 Porto</p>
+                    <p class="tel">TEL: <a href="tel:15558366767">917846838</a><br>
+                        <a href="mailto:info@demolink.org">fioretto@reservas.pt</a>
+                    </p>
+                </div>
+
+
+                <div class="col hours">
+                    <h1>Horário de Funcionamento</h1>
+                    <p>Segunda-Sexta 11:00-00:00<br> Fins de Semana 15:00-00:00</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="map" id="map">
+            <div class="map-wrap">
+                <iframe class="map-iframe" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps?q=Porto,Portugal&hl=pt-PT&z=13&output=embed">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container">&copy; 2025 Fioretto</div>
+    </footer>
+
+
+</body>
+
+</html>
